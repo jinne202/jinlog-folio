@@ -8,8 +8,25 @@
     "start": "next start"
   },
   "dependencies": {
+    "@signal-noise/react-shader-canvas": "^0.0.3",
+    "@types/styled-components": "^5.1.9",
+    "gsap": "^3.6.1",
     "next": "10.2.0",
+    "next-images": "^1.7.0",
+    "next-redux-wrapper": "^6.0.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "styled-components": "^5.2.3",
+    "styled-reset": "^4.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.1",
+    "@types/react": "^17.0.4",
+    "@types/react-redux": "^7.1.16",
+    "babel-plugin-styled-components": "^1.12.0",
+    "typescript": "^4.2.4"
   }
 }
