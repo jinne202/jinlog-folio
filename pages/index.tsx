@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 import Layout from '../components/layout/Layout';
+import Footer from '../components/layout/Footer';
 import ImageContainer from '../components/ImageContainer/ImageContainer';
 
 const myImage = require('../static/image/MyImage.png');
@@ -177,6 +178,13 @@ const Index = () => {
             <ProjectButton>
               View Github
             </ProjectButton>
+            <Link href="https://frontrow-store.herokuapp.com/">
+              <a>
+              <ProjectSubButton>
+                View Demo
+              </ProjectSubButton>
+              </a>
+            </Link>
           </ProjectInfo>
           <ProjectImgWrapper>
             <ImageContainer img={projectFR}/>
@@ -257,27 +265,37 @@ const Index = () => {
           <ContactWrapper>
               <ContactBox>
                 <span>E-MAIL</span>
+                <a href="mailto:hanb5468@gmail.com">
                 <p>hanb5468@gmail.com</p>
+                </a>
               </ContactBox>
               <ContactBox>
                 <span>GITHUB</span>
-                <p>@jinne_com</p>
+                <a href="https://github.com/jinne202" target="_blank">
+                <p>github.com/jinne202</p>
+                </a>
               </ContactBox>
               <ContactBox>
                 <span>LINKEDIN</span>
-                <p>주소</p>
+                <a href="https://www.linkedin.com/in/jinne-han/" target="_blank">
+                <p>linkedin.com/in/jinne-han/</p>
+                </a>
               </ContactBox>
               <ContactBox>
                 <span>ROCKETPUNCH</span>
-                <p>주소</p>
+                <a href="https://rocketpunch.com/@hanb5468" target='_blank'>
+                  <p>rocketpunch.com/@hanb5468</p>
+                </a>
               </ContactBox>
               <ContactBox>
                 <span>INSTAGRAM</span>
+                <a href="https://www.instagram.com/jinne_com/" target="_blank">
                 <p>@jinne_com</p>
+                </a>
               </ContactBox>
           </ContactWrapper>
       </FourthSection>
-      <Copyright>Copyright © 2021 | All rights reserved. | HAN EUNJIN</Copyright>
+      <Footer/>
     </MainWrapper>
     </>
   )
@@ -468,6 +486,7 @@ const RightWrapper = styled.div`
   margin : 100px 0 0 0;
   font-size : 14px;
   position : relative;
+  font-family: 'Noto Sans KR', sans-serif;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     display : block;
@@ -625,10 +644,12 @@ const ProjectDesc = styled.p`
   color : ${({ theme }) => theme.mode.TextColor};
   font-size : 14px;
   line-height : 150%;
+  font-family: 'Noto Sans KR', sans-serif;
 
   & > span {
     margin : 0 0 20px 0;
     display : block;
+    font-family : 'Poppins', sans-serif;
   }
 `
 
@@ -660,6 +681,7 @@ const ProjectNotice = styled.p`
   opacity : 0.8;
   margin : 20px 0 0 0;
   line-height : 150%;
+  font-family: 'Noto Sans KR', sans-serif;
 `
 
 const AboutmeSvgWrapper = styled(SvgWrapper)`
@@ -694,6 +716,7 @@ const ContactSvgWrapper = styled(SvgWrapper)`
   display : block;
   top : -100px;
   left : 500px;
+  pointer-events : none;
 
   @media (min-width: 631px) and (max-width: 1024px) {
         width : 700px;
@@ -746,8 +769,9 @@ const ContactBox = styled.div`
     display : block;
   }
 
-  & > p {
+  & > a > p {
     color : ${({ theme }) => theme.mode.TextColor};
+    cursor: pointer;
   }
 
   @media (max-width: 630px) {
@@ -758,19 +782,10 @@ const ContactBox = styled.div`
       display : block;
     }
 
-    & > p {
+    & > a > p {
       font-size : 14px;
     }
   }
-`
-
-const Copyright = styled.p`
-  text-align : center;
-  color : ${({ theme }) => theme.mode.TextColor};
-  opacity : 0.6;
-  font-size : 12px;
-  width : 100%;
-  padding : 30px 0;
 `
 
 export default Index;

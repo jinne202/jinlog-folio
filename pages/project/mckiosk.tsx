@@ -3,6 +3,7 @@ import { gsap }from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styled from 'styled-components';
 import Layout from '../../components/layout/Layout';
+import Footer from '../../components/layout/Footer';
 
 import SubImageContainer from '../../components/SubImageContainer/SubImageContainer';
 
@@ -66,6 +67,7 @@ const mckiosk = () => {
             <ProjectDesc>
                 해당 프로젝트는 홍익대학교 디지털미디어디자인과 2019년 졸업전시 작품입니다. <br/>실제 키오스크를 대여해 음성인식으로 주문할 수 있는 서비스를 구현했습니다.
             </ProjectDesc>
+            <Footer/>
         </ProjectWrapper>
         </>
     )
@@ -138,6 +140,7 @@ const InfoBox = styled.div`
         font-size : 16px;
         line-height : 170%;
         width : 70%;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     @media (min-width: 631px) and (max-width: 1024px) {
@@ -197,6 +200,7 @@ const ProjectDesc = styled.p`
     font-size : 14px;
     line-height : 150%;
     text-align : center;
+    font-family: 'Noto Sans KR', sans-serif;
 
     @media (max-width: 630px) {
         & > br {
