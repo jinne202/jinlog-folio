@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "netlify-deploy": "next build && next export"
+    "build": "next build && next export",
+    "start": "next start"
   },
   "dependencies": {
     "@signal-noise/react-shader-canvas": "^0.0.3",
