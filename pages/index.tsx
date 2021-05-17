@@ -175,16 +175,16 @@ const Index = () => {
               <span>React / React-Redux / Styled Component</span>
               이커머스의 기능을 구현한 쇼핑몰입니다.
             </ProjectDesc>
+            <a href="https://github.com/jinne202/react-shoppingcart" target="_blank">
             <ProjectButton>
               View Github
             </ProjectButton>
-            <Link href="https://frontrow-store.herokuapp.com/">
-              <a>
+            </a>
+            <a href="https://frontrow-store.herokuapp.com/" target="_blank">
               <ProjectSubButton>
                 View Demo
               </ProjectSubButton>
-              </a>
-            </Link>
+            </a>
           </ProjectInfo>
           <ProjectImgWrapper>
             <ImageContainer img={projectFR}/>
@@ -200,9 +200,11 @@ const Index = () => {
               <span>React / SWR / @emotion-styled</span>
               챗 서버와 디엠 기능을 SWR을 통해 만든 디스코드 클론 프로젝트입니다.
             </ProjectDesc>
+            <a href="https://github.com/jinne202/discord-chat" target="_blank">
             <ProjectButton>
               View Github
             </ProjectButton>
+            </a>
           </ProjectInfo>
         </ProjectWrapper>
         <ProjectWrapperReverse>
@@ -212,12 +214,16 @@ const Index = () => {
               <span>React / Next.js / React-Redux / Styled Component</span>
               간단한 카운터 기능을 추가해 제작한 전시용 사이트입니다.
             </ProjectDesc>
+            <a href="https://github.com/jinne202/dajeongpay" target="_blank">
             <ProjectButton>
               View Github
             </ProjectButton>
+            </a>
+            <a href="https://dajeong-pay.netlify.app" target="_blank">
             <ProjectSubButton>
               View Demo
             </ProjectSubButton>
+            </a>
             <ProjectNotice>해당 프로젝트는 디자이너의 요구로 <br/> 1920해상도에서만 원활하게 보이도록 제작되었습니다.</ProjectNotice>
           </ProjectInfo>
           <ProjectImgWrapper>
@@ -248,9 +254,11 @@ const Index = () => {
               <span>React / Next.js / React-Redux/ Redux-saga / Styled Component</span>
               디자인 솔루션 회사 제로나인즈의 회사 소개 사이트를 제작했습니다.
             </ProjectDesc>
+            <a href="https://github.com/jinne202/zeroninez" target="_blank">
             <ProjectButton>
               View Github
             </ProjectButton>
+            </a>
           </ProjectInfo>
           <ProjectImgWrapper>
             <ImageContainer img={projectZNone}/>
