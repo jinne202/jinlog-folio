@@ -9,7 +9,6 @@ import Footer from '../components/layout/Footer';
 import ImageContainer from '../components/ImageContainer/ImageContainer';
 
 const myImage = require('../static/image/MyImage.png');
-const ProjectImage = require('../static/image/sample.jpeg');
 const projectFR = require('../static/image/projectFR.png');
 const projectDC = require('../static/image/projectDC.png');
 const projectDP = require('../static/image/projectDP.png');
@@ -197,7 +196,7 @@ const Index = () => {
           <ProjectInfo>
             <ProjectTitle>Discord<br/>ChatService</ProjectTitle>
             <ProjectDesc>
-              <span>React / SWR / @emotion-styled</span>
+              <span>React / SWR / @emotion-styled / socket.io</span>
               챗 서버와 디엠 기능을 SWR을 통해 만든 디스코드 클론 프로젝트입니다.
             </ProjectDesc>
             <a href="https://github.com/jinne202/discord-chat" target="_blank">
