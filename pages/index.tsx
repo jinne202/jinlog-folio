@@ -291,7 +291,7 @@ const Index = () => {
               <ContactBox>
                 <span>ROCKETPUNCH</span>
                 <a href="https://rocketpunch.com/@hanb5468" target='_blank'>
-                  <p>rocketpunch.com/@hanb5468</p>
+                <p>rocketpunch.com/@hanb5468</p>
                 </a>
               </ContactBox>
               <ContactBox>
@@ -782,7 +782,8 @@ const ContactBox = styled.div`
   }
 
   @media (max-width: 630px) {
-    margin : 0 0 20px 0;
+    margin : 0 0 40px 30px;
+    display: block;
 
     & > span {
       font-size : 12px;
@@ -791,6 +792,7 @@ const ContactBox = styled.div`
 
     & > a > p {
       font-size : 14px;
+      margin : 10px 0 0 0;
     }
   }
 `
